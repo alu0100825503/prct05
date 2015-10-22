@@ -13,6 +13,9 @@ class Fraccionario
 		Fraccionario.new(@num*other.den - @den*other.num, @den*other.den)
 	end
 	def *(other)
-		Fraccionario.new(@num*other.num, @den* other.den)
+		Fraccionario.new(@num*other.num, @den*other.den)
+	end
+	def /(other)
+		Fraccionario.new(@num*other.den, @den*other.num)
 	end
 end

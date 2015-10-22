@@ -12,5 +12,6 @@ class TestFraccionario < Test::Unit::TestCase
 		assert_equal("19/6", (@fr1 + @fr2).to_s)
 		assert_equal("11/6", (@fr2 - @fr1).to_s)
 		assert_equal("10/6", (@fr1 * @fr2).to_s)
+		assert_equal("4/15", (@fr1 / @fr2).to_s)
 	end
 end
