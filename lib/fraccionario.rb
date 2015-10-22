@@ -9,4 +9,7 @@ class Fraccionario
 	def +(other)
 		Fraccionario.new(@num*other.den + @den*other.num, @den*other.den)
 	end
+	def -(other)
+		Fraccionario.new(@num*other.den - @den*other.num, @den*other.den)
+	end
 end
